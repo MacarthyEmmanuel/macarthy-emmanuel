@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Portfolio of Macarthy Emmanuel Prince — Scholarship Researcher, Content Creator and Coordinator.">
+<title>Macarthy Emmanuel Prince | Content & Research Portfolio</title>
+<style>
+:root{
+  --bg:#f7f6f2; --surface:#fff; --ink:#18221f; --muted:#68736f;
+  --accent:#176b5b; --accent2:#d9eee8; --line:#dfe4e1; --dark:#10231f;
+  --max:1120px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;line-height:1.65}
+a{color:inherit}
+.container{width:min(var(--max),calc(100% - 40px));margin:auto}
+nav{position:sticky;top:0;z-index:10;background:rgba(247,246,242,.94);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.nav{height:72px;display:flex;align-items:center;justify-content:space-between}
+.brand{font-weight:800;text-decoration:none;letter-spacing:-.02em}
+.navlinks{display:flex;gap:24px;font-size:.92rem;color:var(--muted)}
+.navlinks a{text-decoration:none}
+.navlinks a:hover{color:var(--accent)}
+.hero{padding:105px 0 90px;background:linear-gradient(135deg,#f7f6f2 0%,#edf5f1 100%)}
+.eyebrow{display:inline-block;color:var(--accent);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.75rem;margin-bottom:20px}
+h1{font-size:clamp(3rem,7vw,6.4rem);line-height:.96;letter-spacing:-.065em;max-width:900px;margin:0 0 28px}
+.lead{font-size:1.25rem;max-width:720px;color:#46514d}
+.actions{display:flex;gap:12px;flex-wrap:wrap;margin-top:34px}
+.btn{display:inline-flex;padding:13px 20px;border-radius:8px;text-decoration:none;font-weight:750;border:1px solid var(--ink)}
+.btn.primary{background:var(--dark);color:white;border-color:var(--dark)}
+.btn.secondary{background:transparent}
+section{padding:92px 0;border-bottom:1px solid var(--line)}
+.section-head{display:grid;grid-template-columns: .7fr 1.3fr;gap:40px;margin-bottom:50px}
+.section-kicker{font-size:.78rem;text-transform:uppercase;letter-spacing:.12em;color:var(--accent);font-weight:800}
+h2{font-size:clamp(2rem,4vw,3.5rem);line-height:1.05;letter-spacing:-.045em;margin:0}
+h3{font-size:1.25rem;margin:0 0 10px}
+p{margin:0 0 16px}
+.fit-grid{display:grid;grid-template-columns:1fr 1fr;gap:1px;background:var(--line);border:1px solid var(--line)}
+.fit-card{background:var(--surface);padding:28px}
+.fit-card .role{font-size:.88rem;color:var(--muted);font-weight:700;margin-bottom:10px}
+.fit-card p{font-size:.96rem}
+.work-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:18px}
+.work-card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:30px;display:flex;flex-direction:column;min-height:260px}
+.work-card.featured{background:var(--dark);color:white}
+.work-card .tag{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;font-weight:800;color:var(--accent);margin-bottom:24px}
+.work-card.featured .tag{color:#8ed6c5}
+.work-card .bottom{margin-top:auto;padding-top:24px;color:var(--muted);font-size:.9rem}
+.work-card.featured .bottom{color:#c4d2ce}
+.metric{font-size:4rem;line-height:1;font-weight:850;letter-spacing:-.06em;color:var(--accent);margin:18px 0}
+.plan{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.plan-card{background:var(--surface);border:1px solid var(--line);padding:28px;border-radius:14px}
+.plan-card .num{font-size:.8rem;font-weight:800;color:var(--accent);letter-spacing:.1em;text-transform:uppercase}
+.timeline{position:relative;border-left:1px solid #c8d0cc;margin-left:12px}
+.job{position:relative;padding:0 0 48px 34px}
+.job:before{content:"";position:absolute;left:-6px;top:7px;width:11px;height:11px;border-radius:50%;background:var(--accent);box-shadow:0 0 0 5px var(--bg)}
+.job-meta{font-size:.85rem;color:var(--muted);font-weight:700;margin-bottom:8px}
+.job h3{font-size:1.4rem;margin-bottom:4px}
+.company{color:var(--accent);font-weight:750;margin-bottom:14px}
+.job ul{margin:0;padding-left:20px;color:#4d5854}
+.skills{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+.skill{background:var(--surface);border:1px solid var(--line);padding:22px;border-radius:12px}
+.skill strong{display:block;margin-bottom:7px}
+.skill span{font-size:.9rem;color:var(--muted)}
+.contact{background:var(--dark);color:white;border:0}
+.contact .section-kicker{color:#8ed6c5}
+.contact h2{max-width:760px}
+.contact p{color:#c4d2ce;max-width:650px;font-size:1.1rem}
+.contact .btn.primary{background:white;color:var(--dark);border-color:white}
+footer{padding:28px 0;color:var(--muted);font-size:.85rem}
+@media(max-width:800px){
+  .navlinks{display:none}.hero{padding:75px 0}
+  .section-head,.fit-grid,.work-grid,.plan,.skills{grid-template-columns:1fr}
+  section{padding:65px 0}.section-head{gap:15px;margin-bottom:32px}
+  h1{font-size:clamp(3rem,15vw,5rem)}
+}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="container nav">
+    <a class="brand" href="#top">Macarthy Emmanuel Prince</a>
+    <div class="navlinks">
+      <a href="#fit">Fit</a><a href="#work">Selected Work</a><a href="#plan">90 Days</a>
+      <a href="#experience">Experience</a><a href="#contact">Contact</a>
+    </div>
+  </div>
+</nav>
+
+<main id="top">
+<header class="hero">
+  <div class="container">
+    <div class="eyebrow">Content • Research • Coordination</div>
+    <h1>I turn scholarship research into content students can act on.</h1>
+    <p class="lead">I research, publish and create video guides on scholarships at ScholarshipTab. My work combines careful research, clear writing, SEO, social content, training materials and team coordination.</p>
+    <div class="actions">
+      <a class="btn primary" href="#fit">Explore my experience</a>
+      <a class="btn secondary" href="mailto:macarthyemmanuel01@gmail.com">Email me</a>
+    </div>
+  </div>
+</header>
+
+<section id="fit">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Fit for the role</div>
+      <div><h2>Relevant experience, backed by practical work.</h2></div>
+    </div>
+    <div class="fit-grid">
+      <article class="fit-card"><div class="role">Lead and coordinate a content team</div><p>As NYSC Corps Liaison Officer, I coordinated more than 130 corps members and maintained communication between corps members and their host organisations.</p></article>
+      <article class="fit-card"><div class="role">Mentor and support team members</div><p>I have trained a colleague at work and bring a practical, supportive approach to helping others understand processes and standards.</p></article>
+      <article class="fit-card"><div class="role">Research, verify and publish scholarship content</div><p>At ScholarshipTab, I research current opportunities and publish them on the company website. I also created a Scholarship Research template to make sourcing more consistent.</p></article>
+      <article class="fit-card"><div class="role">Writing and editing</div><p>I write and edit scholarship content and develop training materials for an international scholarship masterclass.</p></article>
+      <article class="fit-card"><div class="role">Make content clear and engaging</div><p>My YouTube guides turn scholarship information into step-by-step application instructions students can follow independently.</p></article>
+      <article class="fit-card"><div class="role">Use analytics to inform content</div><p>I helped increase ScholarshipTab website traffic by 75% through optimised social media campaigns and targeted content.</p></article>
+      <article class="fit-card"><div class="role">SEO and social amplification</div><p>I apply SEO to scholarship content and videos and create social media materials that help promote opportunities across platforms.</p></article>
+      <article class="fit-card"><div class="role">Organisation and deadlines</div><p>At NYSC I managed official correspondence and administrative support. Earlier, I handled front desk operations in a hotel environment.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="work">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Selected work</div>
+      <div><h2>Research turned into useful, student-focused content.</h2></div>
+    </div>
+    <div class="work-grid">
+      <article class="work-card featured">
+        <div class="tag">01 / Video</div><h3>YouTube Scholarship Application Guides</h3>
+        <p>Video walkthroughs that explain how students can apply for top scholarship opportunities.</p>
+        <div class="bottom">Research → structure → explain → publish → optimise for search</div>
+      </article>
+      <article class="work-card">
+        <div class="tag">02 / Social</div><h3>Scholarship Fliers in Canva</h3>
+        <p>Social media graphics designed to promote scholarship opportunities on Facebook and other channels.</p>
+        <div class="bottom">Visual communication • Canva • Social promotion</div>
+      </article>
+      <article class="work-card">
+        <div class="tag">03 / Process</div><h3>Scholarship Research Template</h3>
+        <p>A repeatable structure for sourcing new scholarship opportunities and keeping research consistent.</p>
+        <div class="bottom">Research workflow • Consistency • Quality control</div>
+      </article>
+      <article class="work-card">
+        <div class="tag">04 / Education</div><h3>International Scholarship Masterclass</h3>
+        <p>A training programme covering scholarship documentation and competitive application skills.</p>
+        <div class="bottom">10-page trainer module • Participant workbook • Slide deck prompts</div>
+      </article>
+      <article class="work-card">
+        <div class="tag">05 / Growth</div><div class="metric">75%</div><h3>Website Traffic Growth</h3>
+        <p>Growth in overall ScholarshipTab website traffic through optimised social media campaigns and targeted content.</p>
+        <div class="bottom">Content strategy • Social campaigns • Audience growth</div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section id="plan">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">First 90 days</div>
+      <div><h2>A practical approach to understanding, standardising and improving the workflow.</h2></div>
+    </div>
+    <div class="plan">
+      <article class="plan-card"><div class="num">Days 01–30</div><h3>Understand</h3><p>Learn the team's current workflow, review existing content and analytics, understand what students search for, and speak with writers about what helps or slows them down.</p></article>
+      <article class="plan-card"><div class="num">Days 31–60</div><h3>Standardise</h3><p>Develop a concise editorial standard covering tone, sourcing from official pages and formatting. Add a review checklist and shared calendar with owners and deadlines.</p></article>
+      <article class="plan-card"><div class="num">Days 61–90</div><h3>Improve</h3><p>Introduce a monthly performance report and coordinate upcoming scholarship cycles with social media so content is ready when students begin searching.</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="experience">
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Experience</div>
+      <div><h2>Research, content and coordination across different environments.</h2></div>
+    </div>
+    <div class="timeline">
+      <article class="job">
+        <div class="job-meta">June 2025 – Present</div><h3>Scholarship Researcher & Content Creator</h3><div class="company">ScholarshipTab</div>
+        <ul><li>Research and publish current scholarship opportunities on the company website.</li><li>Created a Scholarship Research template to standardise sourcing.</li><li>Produce YouTube scholarship application guides and apply SEO.</li><li>Design social media fliers in Canva.</li><li>Contributed to 75% overall website traffic growth through optimised social campaigns and targeted content.</li><li>Trained a colleague at work.</li></ul>
+      </article>
+      <article class="job">
+        <div class="job-meta">2024 – 2025</div><h3>Corps Liaison Officer</h3><div class="company">National Youth Service Corps (NYSC)</div>
+        <ul><li>Led and coordinated 130+ corps members.</li><li>Facilitated communication with host organisations.</li><li>Managed official correspondence and provided administrative support.</li></ul>
+      </article>
+      <article class="job">
+        <div class="job-meta">2022 – 2024</div><h3>Receptionist</h3><div class="company">Hamilton Park Hotel, Ogun State</div>
+        <ul><li>Provided customer service and managed guest relations.</li><li>Ran front desk operations promptly and efficiently.</li></ul>
+      </article>
+      <article class="job">
+        <div class="job-meta">2021 – 2022</div><h3>Research Intern</h3><div class="company">International Institute of Tropical Agriculture (IITA)</div>
+        <ul><li>Collected data and prepared reports on crop and soil quality.</li><li>Gained practical experience with agricultural research methods and technologies.</li></ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container">
+    <div class="section-head">
+      <div class="section-kicker">Skills & Education</div>
+      <div><h2>A mix of research discipline, content execution and coordination.</h2></div>
+    </div>
+    <div class="skills">
+      <div class="skill"><strong>Content & Research</strong><span>Scholarship research, publishing, YouTube content, SEO, Canva</span></div>
+      <div class="skill"><strong>Leadership</strong><span>Team coordination, training, mentoring, deadlines, correspondence</span></div>
+      <div class="skill"><strong>Data & Analysis</strong><span>Data entry, data collection, reporting, analytical thinking</span></div>
+      <div class="skill"><strong>Communication</strong><span>Team collaboration, customer relations, chat and email support</span></div>
+    </div>
+    <div style="margin-top:35px;padding:28px;background:var(--surface);border:1px solid var(--line);border-radius:14px">
+      <strong>Bachelor of Agricultural Technology (B.Agric Tech)</strong><br>
+      Second Class Upper (2:1) · Federal University of Technology, Minna · 2023
+      <p style="margin-top:14px;color:var(--muted)">Volunteering: Red Cross member, participating in health outreach and emergency response programmes.</p>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <div class="container">
+    <div class="section-kicker">Let's talk</div>
+    <h2>Looking for someone who can research carefully, communicate clearly and keep content moving?</h2>
+    <p>I'd be glad to walk through my work and experience in more detail. References are available on request.</p>
+    <div class="actions">
+      <a class="btn primary" href="mailto:macarthyemmanuel01@gmail.com?subject=Content%20Team%20Lead%20%2F%20Coordinator">macarthyemmanuel01@gmail.com</a>
+      <a class="btn secondary" style="color:white;border-color:#80938d" href="tel:+2349056439523">0905 643 9523</a>
+    </div>
+    <p style="margin-top:24px;font-size:.9rem">Isolo, Lagos State, Nigeria · 0707 022 8692</p>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="container">© 2026 Macarthy Emmanuel Prince · Content, Research & Coordination Portfolio</div>
+</footer>
+</body>
+</html>
